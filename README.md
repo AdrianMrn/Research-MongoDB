@@ -2,8 +2,6 @@
 Web Research - New Technology - MongoDB
 ===================
 
-# Inleiding #
-
 > MongoDB (from humongous) is a free and open-source cross-platform
 > document-oriented database program. Classified as a NoSQL database
 > program, MongoDB uses JSON-like documents with schemas.
@@ -27,9 +25,9 @@ Daarom volg ik in plaats daarvan de introductie in de [MongoDB docs](https://doc
 
 ## Tests/oefeningen ##
 
-* [1_intro]()
-* [2_user]()
-* [3_recepten]()
+* [1_intro](https://github.com/AdrianMrn/Research-MongoDB/tree/master/tests/1_intro)
+* [2_user](https://github.com/AdrianMrn/Research-MongoDB/tree/master/tests/2_user)
+* [3_recepten](https://github.com/AdrianMrn/Research-MongoDB/tree/master/tests/3_recepten)
 
 
 

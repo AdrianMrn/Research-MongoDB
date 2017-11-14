@@ -6,8 +6,29 @@ Ik maak een nieuwe directory *tests/1_intro/* aan in de root van mijn GitHub pro
 
 Hierna installeer ik de mongoose library via `npm install --save mongoose`. Ik creëer ook een file app.js waarin ik mijn code zal schrijven en maak nog een folder *schemas* aan om mijn MongoDB schemas in op te slagen. Verder installeer ik de [async](https://www.npmjs.com/package/async) library om snel veel documenten te kunnen toevoegen aan mijn database en gemakkelijk met de asynchrone en callback-oriented werking van Node.js te werken.
 
+Ik schrijf een simpel [schema](https://github.com/AdrianMrn/Research-MongoDB/blob/master/tests/2_user/schemas/userSchema.js) userSchema met de velden *name*, *email* en *password* en laadt dit in app.js in via `var user = require('./schemas/userSchema').user`.
+
 Helemaal bovenaan de app.js file laadt ik mongoose in door de volgende code:
 `var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;`
 
-Ik schrijf een simpel [schema]() userSchema met de velden *name*, *email* en *password* en laadt dit in app.js in via `var user = require('./schemas/userSchema').user`.
+Ook laad ik het nieuwe schema in:
+`var user = require('./schemas/userSchema').user;`
+
+Ik creëer een nieuwe variabele *user* en geef deze, volgens het schema, enkele waarden mee.
+`var newuser = new user({
+    name: "Adriaan",
+    email: "adriaanmarain300@gmail.com",
+    password: "hunter112",
+});`
+
+En om het op te slagen:
+`newuser.save(function (err) {
+    if (err) {
+        console.log(err);
+    } else {
+        console.log('meow');
+    }
+});`
+
+Ik zie in mijn database nu een nieuw document met de ingevulde velden.
