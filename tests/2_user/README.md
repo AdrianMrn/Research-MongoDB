@@ -9,13 +9,16 @@ Hierna installeer ik de mongoose library via `npm install --save mongoose`. Ik c
 Ik schrijf een simpel [schema](https://github.com/AdrianMrn/Research-MongoDB/blob/master/tests/2_user/schemas/userSchema.js) userSchema met de velden *name*, *email* en *password* en laadt dit in app.js in via `var user = require('./schemas/userSchema').user`.
 
 Helemaal bovenaan de app.js file laadt ik mongoose in door de volgende code:
+
 `var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;`
 
 Ook laad ik het nieuwe schema in:
+
 `var user = require('./schemas/userSchema').user;`
 
 Ik creëer een nieuwe variabele *user* en geef deze, volgens het schema, enkele waarden mee.
+
 `var newuser = new user({
     name: "Adriaan",
     email: "adriaanmarain300@gmail.com",
@@ -23,6 +26,7 @@ Ik creëer een nieuwe variabele *user* en geef deze, volgens het schema, enkele 
 });`
 
 En om het op te slagen:
+
 `newuser.save(function (err) {
     if (err) {
         console.log(err);
