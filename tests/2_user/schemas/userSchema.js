@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 Schema = mongoose.Schema;
 
-var localConnection = mongoose.createConnection('mongodb://localhost/research_test_1_intro');
+var localConnection = mongoose.createConnection('mongodb://localhost/research_test_2_user');
 
 var userSchema = new Schema({
     name: String,
