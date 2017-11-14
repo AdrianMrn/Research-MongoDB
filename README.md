@@ -25,8 +25,12 @@ Dit wil zeggen dat ik al een inleiding heb gehad in het systeem voordat ik een l
 
 Daarom volg ik in plaats daarvan de introductie in de [MongoDB docs](https://docs.mongodb.com/getting-started/shell/introduction/) nog eens en ga ik hierna redelijk snel overgaan op het maken van enkele demo's en tests. Ik ververs mijn kennis over schema's, de MongoDB shell en indexes.
 
-## Tests en oefeningen ##
-Om het ontwikkelen overzichtelijker en reproduceerbaar te maken, ga ik gebruik maken van de Javascript run-time environment [Node.js](https://nodejs.org/en/). Om met de database te verbinden zal ik gebruik maken van de tool [Mongoose](https://www.npmjs.com/package/mongoose).
+## Tests/oefeningen ##
+
+* [1_intro]()
+* [2_user]()
+* [3_recepten]()
+
 
 
 
