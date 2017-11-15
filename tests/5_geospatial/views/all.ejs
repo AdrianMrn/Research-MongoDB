@@ -9,9 +9,6 @@
     <h4><a href="/">Home</a></h4>
 
     <div id="map"></div>
-    <!-- <% papiermanden.forEach(function(papiermand){ %>
-      <p><%= papiermand.uniek_nummer_papiermand %></p>
-    <% }) %> -->
 
     <script src="https://maps.googleapis.com/maps/api/js?key=<%= apikey %>"></script>
     <script>
@@ -22,7 +19,6 @@
 
       var infowindow = new google.maps.InfoWindow();
       var papiermanden = [<%- papiermanden %>];
-      console.log(papiermanden);
 
       var marker;
       for (var i = 0; i < papiermanden.length; i++) {

@@ -29,12 +29,19 @@ app.get('/', function(req, res, next) {
 /* all */
 app.get('/all', function(req, res, next) {
   mapController.getAll(function(papiermanden){
-    res.render('all', { title: 'Test 5_geospatial - All', papiermanden: papiermanden, apikey: process.env.DB_HOST });
+    res.render('all', { title: 'Test 5_geospatial - All', papiermanden: papiermanden, apikey: process.env.GOOGLE_MAPS_JAVASCRIPT_API_KEY });
   });
 });
 /* near */
 app.get('/near', function(req, res, next) {
-  res.render('near', { title: 'Test 5_geospatial - Near' });
+  var papiermanden = [];
+  if (req.query.lng && req.query.lat && req.query.rad) {
+    mapController.getNear(req.query.lng, req.query.lat, req.query.rad, function(papiermanden){
+      res.json(papiermanden);
+    });
+  } else {
+    res.render('near', { title: 'Test 5_geospatial - Near', papiermanden: papiermanden, apikey: process.env.GOOGLE_MAPS_JAVASCRIPT_API_KEY });
+  }
 });
 /* filter */
 app.get('/filter', function(req, res, next) {
