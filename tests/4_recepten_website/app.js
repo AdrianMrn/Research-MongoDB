@@ -24,7 +24,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-/* GET home page. */
+/* homepage. mongoose query haalt alle recepten op */
 app.get('/', function(req, res, next) {
   recept.find({}, {name:1}, function(err, recepten){
     if (err) console.log(err);
@@ -32,7 +32,7 @@ app.get('/', function(req, res, next) {
   });
 });
 
-/* GET recept detail */
+/* detailpagina: recept detail ophalen adhv mongodb id */
 app.get('/detail/:id', function (req, res) {
   recept.findOne({_id: mongoose.Types.ObjectId(req.params.id)}, {}, function(err, recept){
       if (err) console.log(err);
@@ -40,8 +40,7 @@ app.get('/detail/:id', function (req, res) {
   });
 });
 
-/* new recipe */
-//hiermee kan de user een nieuw recept aanmaken, dat in de database komt en achteraf te bekijken is. Ezpz!
+/* recipe post: de user kan een nieuw recept aanmaken, dat in de database komt en achteraf te bekijken is. Ezpz! */
 app.post('/newrecipe', function (req, res) {
   var newrecept = new recept(req.body);
   newrecept.save(function (err) {
