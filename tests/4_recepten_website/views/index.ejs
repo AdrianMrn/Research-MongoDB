@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>Recepten</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    </head>
+    <body>
+        <h1>Recepten</h1>
+        <ul id="recepten">
+        <% recepten.forEach(function(recept){ %>
+            <a href="/detail/<%= recept._id %>"><li><%= recept.name %></li></a>
+        <% }) %>
+        </ul>
+
+        <h3>Nieuw recept aanmaken</h3>
+        <form action="/newrecipe" method="post">
+            Naam: <input type="text" name="name"><br>
+            Gemaakt door: <input type="text" name="createdBy"><br>
+            Bereidingstijd: <input type="number" name="minutesToPrepare"><br>
+            Benodigdheden: <input type="text" name="accessories"><br>
+
+            <input type="submit" value="Recept toevoegen">
+        </form>
+    </body>
+</html>

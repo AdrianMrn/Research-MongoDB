@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>Recepten</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    </head>
+    <body>
+        <h4><a href="/">Home</a></h4>
+
+        <h1><%= recept.name %></h1>
+        <p>Gemaakt door: <%= recept.createdBy %></p>
+        <p>Publicatiedatum: <%= recept.createdAt %></p>
+        <p>Bereidingstijd: <%= recept.minutesToPrepare %></p>
+
+        <h3>Benodigdheden</h3>
+        <ul id="benodigdheden">
+        <% recept.accessories.forEach(function(accessory){ %>
+            <li><%= accessory %></li>
+        <% }) %>
+        </ul>
+
+        <h3>Ingrediënten</h3>
+        <ul id="ingredienten">
+        <% recept.ingredients.forEach(function(ingredient){ %>
+            <li><%= ingredient.amount + " " + ingredient.unit + " " + ingredient.name %></li>
+        <% }) %>
+        </ul>
+
+        <h3>Stappen</h3>
+        <% recept.steps.forEach(function(step){ %>
+            <h4><%= step.title %></h4>
+            <p><%= step.body %></p>
+        <% }) %>
+    </body>
+</html>

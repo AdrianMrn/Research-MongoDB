@@ -4,7 +4,7 @@ Om het ontwikkelen overzichtelijker en reproduceerbaar te maken, ga ik gebruik m
 
 Ik maak een nieuwe directory *tests/1_intro/* aan in de root van mijn GitHub project, en run daar het commando `npm init` om een node omgeving te initialiseren en het installeren van node packages via [npm](https://www.npmjs.com/) mogelijk te maken. Ik accepteer alle default waarden, er is nu een file *package.json* aangemaakt waarin gegevens over mijn applicatie worden opgeslagen, zoals welke dependencies het heeft.
 
-Hierna installeer ik de mongoose library via `npm install --save mongoose`. Ik creëer ook een file app.js waarin ik mijn code zal schrijven en maak nog een folder *schemas* aan om mijn MongoDB schemas in op te slagen. Verder installeer ik de [async](https://www.npmjs.com/package/async) library om snel veel documenten te kunnen toevoegen aan mijn database en gemakkelijk met de asynchrone en callback-oriented werking van Node.js te werken.
+Hierna installeer ik de mongoose library via `npm install --save mongoose`. Ik creëer ook een file app.js waarin ik mijn code zal schrijven en maak nog een folder *schemas* aan om mijn MongoDB schemas in op te slagen.
 
 Ik schrijf een simpel [schema](https://github.com/AdrianMrn/Research-MongoDB/blob/master/tests/2_user/schemas/userSchema.js) userSchema met de velden *name*, *email* en *password* en laadt dit in app.js in via `var user = require('./schemas/userSchema').user`.
 

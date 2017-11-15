@@ -1,27 +1,26 @@
-var express = require('express')
-var app = express()
 var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
+var express = require('express');
+var app = express();
+var path = require('path');
 
-var user = require('./schemas/userSchema').user;
+app.engine('.html', require('ejs').__express);
+app.set('views', path.join(__dirname, 'views'));
 
-var newuser = new user({
-    name: "Adriaan",
-    email: "adriaanmarain300@gmail.com",
-    password: "hunter112",
-});
-
-newuser.save(function (err) {
-    if (err) {
-        console.log(err);
-    } else {
-        console.log('meow');
-    }
-});
+var recept = require('./schemas/receptSchema').recept;
 
 app.get('/', function (req, res) {
-    res.send('Hello World')
-})
+    recepten = recept.find({}, {name:1}, function(err, recepten){
+        if (err) console.log(err);
+        res.render(recepten, {recepten: recepten});
+    });
+});
 
-//run expressjs server
-app.listen(3000)
+app.get('/detail/:id', function (req, res) {
+    recept = recept.find({_id: mongoose.Types.ObjectId(req.params.id)}, {}, function(err, recept){
+        if (err) console.log(err);
+        res.json(recept);
+    });
+});
+
+app.listen(3000);
