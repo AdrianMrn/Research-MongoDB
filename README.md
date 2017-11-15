@@ -30,9 +30,6 @@ Daarom volg ik in plaats daarvan de introductie in de [MongoDB docs](https://doc
 * [3_recepten](https://github.com/AdrianMrn/Research-MongoDB/tree/master/tests/3_recepten)
 
 
-
-
-
 ----------
 
 > README.md Written with [StackEdit](https://stackedit.io/).

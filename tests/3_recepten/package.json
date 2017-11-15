@@ -1,0 +1,14 @@
+{
+  "name": "3_recepten",
+  "version": "1.0.0",
+  "description": "Ik schrijf een [schema]() dat voor een receptenwebsite zou kunnen gebruikt worden.",
+  "main": "userSchema.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^4.13.2"
+  }
+}
