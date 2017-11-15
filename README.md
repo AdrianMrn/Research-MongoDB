@@ -23,6 +23,8 @@ Daarom volgde ik in plaats daarvan de introductie in de [MongoDB docs](https://d
 
 # Tests/oefeningen #
 
+Per test leg ik in een README.md uit wat ik doe.
+
 * [1_intro](https://github.com/AdrianMrn/Research-MongoDB/tree/master/tests/1_intro)
 * [2_user](https://github.com/AdrianMrn/Research-MongoDB/tree/master/tests/2_user)
 * [3_recepten](https://github.com/AdrianMrn/Research-MongoDB/tree/master/tests/3_recepten)
@@ -31,6 +33,9 @@ Daarom volgde ik in plaats daarvan de introductie in de [MongoDB docs](https://d
 
 ## TODO ##
 * test 5 geolocation
-* test 6 advanced queries
+* test 6 'advanced' queries? elemMatch?
 
-* demo bouwen & script
+# Demo #
+**Idee demo**
+Kan niet echt *hello world* in MongoDB schrijven, dus applicatie volledig op voorhand schrijven en dan laten zien hoe "simpel" & straightforward het was om te maken? Via slides met highlights van code, ...?
+mss test 5_geospatial gebruiken en aan elke papiermand een randomised kleur toewijzen, dat ik zowel geospatial als elemMatch kan tonen?
