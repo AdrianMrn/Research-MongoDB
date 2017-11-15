@@ -14,18 +14,20 @@ Zoals het *humongous* deel van de naam al doet denken, wordt MongoDB meer en mee
 
 ----------
 
-# Logboek #
-
-## MongoDB leren gebruiken ##
+# MongoDB leren gebruiken #
 Ik heb bij mijn project [Coucher](https://github.com/adrianmrn/coucher) al MongoDB gebruikt. Dit omdat ik had gelezen over de gemakkelijke implementatie van indexering op basis van geolocatie, die we nodig hadden om o.a. couchsurfing plaatsen in een straal rond een punt weer te geven op een kaart.
 
 Dit wil zeggen dat ik al een inleiding heb gehad in het systeem voordat ik een logboek begon bij te houden. Ik wilde de lessen van de [MongoDB University](https://university.mongodb.com) volgen, maar om hiermee nog maar op een *intermediate* niveau te geraken, moet je minstens 14 weken uitstrekken, waarbij er elke week een online van +/- 90 minuten beschikbaar komt en je *assessments* en een *final exam* voorgeschoteld krijgt.
 
 Daarom volg ik in plaats daarvan de introductie in de [MongoDB docs](https://docs.mongodb.com/getting-started/shell/introduction/) nog eens en ga ik hierna redelijk snel overgaan op het maken van enkele demo's en tests. Ik ververs mijn kennis over schema's, de MongoDB shell en indexes.
 
-## Tests/oefeningen ##
+# Tests/oefeningen #
 
 * [1_intro](https://github.com/AdrianMrn/Research-MongoDB/tree/master/tests/1_intro)
 * [2_user](https://github.com/AdrianMrn/Research-MongoDB/tree/master/tests/2_user)
 * [3_recepten](https://github.com/AdrianMrn/Research-MongoDB/tree/master/tests/3_recepten)
 * [4_recepten_website](https://github.com/AdrianMrn/Research-MongoDB/tree/master/tests/4_recepten_website)
+* [5_geospatial_queries]()
+
+## TODO ##
+* test 5 geolocation
