@@ -29,7 +29,3 @@ Daarom volg ik in plaats daarvan de introductie in de [MongoDB docs](https://doc
 * [2_user](https://github.com/AdrianMrn/Research-MongoDB/tree/master/tests/2_user)
 * [3_recepten](https://github.com/AdrianMrn/Research-MongoDB/tree/master/tests/3_recepten)
 * [4_recepten_website](https://github.com/AdrianMrn/Research-MongoDB/tree/master/tests/4_recepten_website)
-
-----------
-
-> README.md Written with [StackEdit](https://stackedit.io/).
