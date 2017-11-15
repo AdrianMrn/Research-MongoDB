@@ -27,7 +27,10 @@ Daarom volgde ik in plaats daarvan de introductie in de [MongoDB docs](https://d
 * [2_user](https://github.com/AdrianMrn/Research-MongoDB/tree/master/tests/2_user)
 * [3_recepten](https://github.com/AdrianMrn/Research-MongoDB/tree/master/tests/3_recepten)
 * [4_recepten_website](https://github.com/AdrianMrn/Research-MongoDB/tree/master/tests/4_recepten_website)
-* [5_geospatial_queries]()
+* [5_geospatial]()
 
 ## TODO ##
 * test 5 geolocation
+* test 6 advanced queries
+
+* demo bouwen & script
