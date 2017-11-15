@@ -41,6 +41,7 @@ app.get('/detail/:id', function (req, res) {
 });
 
 /* new recipe */
+//hiermee kan de user een nieuw recept aanmaken, dat in de database komt en achteraf te bekijken is. Ezpz!
 app.post('/newrecipe', function (req, res) {
   var newrecept = new recept(req.body);
   newrecept.save(function (err) {
