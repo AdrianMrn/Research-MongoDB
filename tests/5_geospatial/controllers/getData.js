@@ -55,6 +55,6 @@ function getData(page) {
 }
 
 /* getData() voor het eerst oproepen, We beginnen op pagina 1.
-    Na elke batch van 500 gaan we naar de volgende pagina, als deze bestaat.
+    Na elke batch gaan we naar de volgende pagina, indien deze bestaat.
     (pageNext in het "paging" gedeelte van de API) */
 getData(1);

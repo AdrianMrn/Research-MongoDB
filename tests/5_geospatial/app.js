@@ -1,3 +1,4 @@
+require('dotenv').config()
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -21,9 +22,23 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-/* GET home page. */
+/* homepage */
 app.get('/', function(req, res, next) {
   res.render('index', { title: 'Test 5_geospatial' });
+});
+/* all */
+app.get('/all', function(req, res, next) {
+  mapController.getAll(function(papiermanden){
+    res.render('all', { title: 'Test 5_geospatial - All', papiermanden: papiermanden, apikey: process.env.DB_HOST });
+  });
+});
+/* near */
+app.get('/near', function(req, res, next) {
+  res.render('near', { title: 'Test 5_geospatial - Near' });
+});
+/* filter */
+app.get('/filter', function(req, res, next) {
+  res.render('filter', { title: 'Test 5_geospatial - Filter' });
 });
 
 // catch 404 and forward to error handler

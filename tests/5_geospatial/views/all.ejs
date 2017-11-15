@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <h4><a href="/">Home</a></h4>
+
+    <div id="map"></div>
+    <!-- <% papiermanden.forEach(function(papiermand){ %>
+      <p><%= papiermand.uniek_nummer_papiermand %></p>
+    <% }) %> -->
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=<%= apikey %>"></script>
+    <script>
+      var map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 51.21, lng: 4.42},
+        zoom: 12
+      });
+
+      var infowindow = new google.maps.InfoWindow();
+      var papiermanden = [<%- papiermanden %>];
+      console.log(papiermanden);
+
+      var marker;
+      for (var i = 0; i < papiermanden.length; i++) {
+        marker = new google.maps.Marker({
+          position: new google.maps.LatLng(papiermanden[i].location[1], papiermanden[i].location[0]),
+          map: map
+        });
+
+        google.maps.event.addListener(marker, 'click', (function(marker, i) {
+          return function() {
+            infowindow.setContent(
+              "<p>" + papiermanden[i].straatnaam + " " + papiermanden[i].huisnummer + "</p><p>" + papiermanden[i].opmerking + "</p>"
+            );
+            infowindow.open(map, marker);
+          }
+        })(marker, i));
+      }
+    </script>
+
+  </body>
+</html>
