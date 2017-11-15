@@ -42,8 +42,16 @@ app.get('/detail/:id', function (req, res) {
 
 /* new recipe */
 app.post('/newrecipe', function (req, res) {
-  res.json(req.body);
-  
+  var newrecept = new recept(req.body);
+  newrecept.save(function (err) {
+      if (err) {
+          console.log(err);
+          res.redirect('/');
+      } else {
+          console.log('meow');
+          res.redirect('/');
+      }
+  });
 });
 
 // catch 404 and forward to error handler
