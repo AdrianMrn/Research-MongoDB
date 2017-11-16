@@ -50,3 +50,4 @@ Presentatie: https://docs.google.com/presentation/d/1WjixvGuEMH0HDDh2fhjZA1qdypo
 :   mapController tonen & uitleggen
 :   Applicatie tonen in browser
 5. Wat geleerd
+:   MongoDB is niet altijd de beste manier om data op te slagen, in bepaalde applicaties zijn relaties heel belangrijk.
