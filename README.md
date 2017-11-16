@@ -12,7 +12,6 @@ MongoDB is een NoSQL of een non-relationele database. Dit wilt zeggen dat niet a
 
 Zoals het *humongous* deel van de naam al doet denken, wordt MongoDB meer en meer in gebruik genomen waar men aan big data werkt. Ook real-time web applicaties maken er vaak gebruik van, door de simpele en effectieve implementatie van indexes. Deze indexes zorgen er voor dat je op veel verschillende manieren je data kan ordenen en snel kan ophalen. Deze ordening kan op vele verschillende manieren gebeuren: alfabetisch, numeriek, geografisch, etc.
 
-----------
 
 # MongoDB 101 #
 Ik heb bij mijn project [Coucher](https://github.com/adrianmrn/coucher) al MongoDB gebruikt. Dit omdat ik had gelezen over de gemakkelijke implementatie van indexering op basis van geolocatie, die we nodig hadden om o.a. couchsurfing plaatsen in een straal rond een punt weer te geven op een kaart.
@@ -20,6 +19,7 @@ Ik heb bij mijn project [Coucher](https://github.com/adrianmrn/coucher) al Mongo
 Dit wil zeggen dat ik al een inleiding heb gehad in het systeem voordat ik een logboek begon bij te houden. Ik wilde de lessen van de [MongoDB University](https://university.mongodb.com) volgen, maar om hiermee nog maar op een *intermediate* niveau te geraken, moet je minstens 14 weken uitstrekken, waarbij er elke week een online van +/- 90 minuten beschikbaar komt en je tussentijdse testen en een eindexamen voorgeschoteld krijgt. Deze lessen zijn ook niet beschikbaar via een andere weg.
 
 Daarom volgde ik in plaats daarvan de introductie in de [MongoDB docs](https://docs.mongodb.com/getting-started/shell/introduction/). Ik volg deze nu opnieuw en daarna ga ik redelijk snel overgaan op het maken van enkele demo's en tests. Ik ververs mijn kennis over schema's, de MongoDB shell en indexes en maak dan enkele zelf bedachte tests, oplopend in complexiteit.
+
 
 # Tests/oefeningen #
 
