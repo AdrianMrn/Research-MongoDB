@@ -33,21 +33,4 @@ Per test leg ik in een README.md uit wat ik doe.
 
 # Demo #
 
-Kan niet echt *hello world* in MongoDB schrijven, dus applicatie volledig op voorhand schrijven en dan laten zien hoe "simpel" & straightforward het was om te maken? Via slides met highlights van code, ...?
-test 5_geospatial gebruiken.
-
 Presentatie: https://docs.google.com/presentation/d/1WjixvGuEMH0HDDh2fhjZA1qdypo8tLojlz0OJyXe8pA/
-
-1. Wat is MongoDB (1 min)
-2. Waarom MongoDB gekozen (30 sec)
-3. Waarvoor wordt MongoDB gebruikt/wat is er mogelijk met MongoDB (3 min)
-:   Tegen het einde over geospatial queries beginnen
-4. Live Demo 
-:   Uitleggen API
-:   Uitleggen NodeJS en Google Maps API
-:   Schema tonen & uitleggen
-:   getData tonen & uitleggen
-:   mapController tonen & uitleggen
-:   Applicatie tonen in browser
-5. Wat geleerd
-:   MongoDB is niet altijd de beste manier om data op te slagen, in bepaalde applicaties zijn relaties heel belangrijk.
