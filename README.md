@@ -29,13 +29,9 @@ Per test leg ik in een README.md uit wat ik doe.
 * [2_user](https://github.com/AdrianMrn/Research-MongoDB/tree/master/tests/2_user)
 * [3_recepten](https://github.com/AdrianMrn/Research-MongoDB/tree/master/tests/3_recepten)
 * [4_recepten_website](https://github.com/AdrianMrn/Research-MongoDB/tree/master/tests/4_recepten_website)
-* [5_geospatial]()
-
-## TODO ##
-* test 5 geolocation
-* test 6 'advanced' queries? elemMatch?
+* [5_geospatial](https://github.com/AdrianMrn/Research-MongoDB/tree/master/tests/5_geospatial)
 
 # Demo #
-**Idee demo**
+
 Kan niet echt *hello world* in MongoDB schrijven, dus applicatie volledig op voorhand schrijven en dan laten zien hoe "simpel" & straightforward het was om te maken? Via slides met highlights van code, ...?
-mss test 5_geospatial gebruiken en aan elke papiermand een randomised kleur toewijzen, dat ik zowel geospatial als elemMatch kan tonen?
+test 5_geospatial gebruiken.
