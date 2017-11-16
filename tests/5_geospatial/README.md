@@ -1,6 +1,6 @@
 # Test 5_geospatial #
 
-Bij deze test ga ik gebruik maken van echte data om de [geospatial queries](https://docs.mongodb.com/manual/geospatial-queries/) van MongoDB uit te testen. Ik wil enkele punten op een Google Maps kaart laten zien mbhv de [Google Maps Javascript API](https://developers.google.com/maps/documentation/javascript).
+Bij deze test ga ik gebruik maken van echte data om de [geospatial queries](https://docs.mongodb.com/manual/geospatial-queries/) van MongoDB uit te testen. Ik wil enkele punten op een Google Maps kaart laten zien met behulp van de [Google Maps Javascript API](https://developers.google.com/maps/documentation/javascript).
 
 Ik gebruik de [Express application generator](https://expressjs.com/en/starter/generator.html) met het commando `express --view=ejs` om snel een applicatie-skelet te bouwen met de templating engine ejs reeds geïntegreerd.
 

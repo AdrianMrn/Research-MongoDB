@@ -43,10 +43,6 @@ app.get('/near', function(req, res, next) {
     res.render('near', { title: 'Test 5_geospatial - Near', papiermanden: papiermanden, apikey: process.env.GOOGLE_MAPS_JAVASCRIPT_API_KEY });
   }
 });
-/* filter */
-app.get('/filter', function(req, res, next) {
-  res.render('filter', { title: 'Test 5_geospatial - Filter' });
-});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

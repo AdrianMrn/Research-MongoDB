@@ -14,8 +14,20 @@ exports.getAll = function(next){
 }
 
 exports.getNear = function(lng, lat, rad, next){
-    papiermandSchema.find({location: { $nearSphere: { $geometry: { type: "Point", coordinates: [ lng,lat ] }, $maxDistance: rad } }}, {_id:0, location:1, straatnaam:1, huisnummer:1, postcode:1, opmerking:1, uniek_nummer_papiermand:1}, function(err, papiermanden){
-        if (err) console.log(err);
-        next(papiermanden);
-    });
+    papiermandSchema.find(
+        { location: 
+            { $nearSphere: 
+                { $geometry: 
+                    { type: "Point", coordinates: [ lng,lat ] },
+                    $maxDistance: rad
+                }
+            }
+        },
+
+        {_id:0, location:1, straatnaam:1, huisnummer:1, postcode:1, opmerking:1, uniek_nummer_papiermand:1},
+        function(err, papiermanden){
+            if (err) console.log(err);
+            next(papiermanden);
+        }
+    );
 }
