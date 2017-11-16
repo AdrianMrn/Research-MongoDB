@@ -4,7 +4,7 @@ Schema = mongoose.Schema;
 var localConnection = mongoose.createConnection('mongodb://localhost/research_test_5_geospatial');
 
 var papiermandSchema = new Schema({
-    opendata_id: Number,
+    opendata_id: {type: Number, index: true},
     location: { type: [Number], index: '2dsphere' },
     straatnaam: String,
     huisnummer: String,
