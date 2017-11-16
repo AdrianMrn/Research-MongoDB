@@ -35,3 +35,5 @@ Per test leg ik in een README.md uit wat ik doe.
 
 Kan niet echt *hello world* in MongoDB schrijven, dus applicatie volledig op voorhand schrijven en dan laten zien hoe "simpel" & straightforward het was om te maken? Via slides met highlights van code, ...?
 test 5_geospatial gebruiken.
+
+Presentatie: https://docs.google.com/presentation/d/1WjixvGuEMH0HDDh2fhjZA1qdypo8tLojlz0OJyXe8pA/
